@@ -1,0 +1,238 @@
+/* Map container */
+.map-container {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 2rem;
+}
+
+/* Card styles */
+.card {
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    margin-bottom: 1.5rem !important;
+    font-size: 1.25rem;
+}
+
+.card-text .d-block {
+    margin-bottom: 0.75rem;
+}
+
+.card-text .d-block:last-child {
+    margin-bottom: 1.5rem;
+}
+
+/* Button styles */
+.btn-custom,
+.btn-outline-primary,
+.btn-outline-secondary,
+.nav-pills .nav-link {
+    background-color: transparent;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom {
+    border: 1px solid #28a745;
+    color: #28a745;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+
+.btn-custom:hover,
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 991.98px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.carousel-item {
+    max-height: 80vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style pentru imaginea de backup */
+.menu-image.fallback {
+    filter: grayscale(40%) brightness(90%);
+    opacity: 0.9;
+}
+
+/* Style pentru butoanele de categorie */
+.nav-pills .nav-link {
+    border: 1px solid #28a745; /* Border verde */
+    color: #28a745; /* Text verde */
+}
+
+/* Style pentru butonul activ */
+.nav-pills .nav-link.active {
+    background-color: #28a745 !important; /* Fundal verde pentru butonul activ */
+    border-color: #28a745 !important; /* Border verde pentru butonul activ */
+    color: white !important; /* Text alb pentru butonul activ */
+}
+
+/* Hover effects */
+.nav-pills .nav-link:hover {
+    background-color: #28a745 !important; /* Fundal verde la hover */
+    border-color: #28a745 !important; /* Border verde la hover */
+    color: white !important; /* Text alb la hover */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Exemplu de stiluri care ar putea afecta navbar-ul */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Ensure space between left and right elements */
+}
+
+.navbar-nav {
+    margin-right: auto; /* Pushes the nav items to the left */
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between; /* Aligns items in the navbar */
+}
+
+
+/* Navbar styles */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: right; /* Align items to the right when the menu is collapsed */
+    }
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Add space between items */
+    }
+}
+
+* Custom styles for links */
+a {
+    color: #28a745; /* Green color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Custom styles for checkboxes */
+.form-check-input:checked {
+    background-color: #28a745; /* Green background when checked */
+    border-color: #28a745; /* Green border when checked */
+}
+
+.form-check-input:focus {
+    border-color: #28a745; /* Green border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); /* Green shadow on focus */
+}
+
+
+/* Navbar styles */
+.navbar-custom {
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    background-color: white;  /* Light gray with 90% opacity */
+    z-index: 1000; /* Ensure the navbar is above other content */
+    /* border-bottom: 2px solid #dee2e6; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);/* Optional: Add a border for better visibility */
+}
+
+/* Optional: Adjust the navbar link colors */
+.navbar-custom .nav-link {
+    color:#212529;/* Change link color */
+}
+
+.navbar-custom .nav-link:hover {
+    color:#28a745 ; /*ange link color on hover */
+}
+
+.form-check-label a {
+    color: green; /* Set the link color to green */
+}
+
+.form-check-label a:hover {
+    color: darkgreen; /* Optional: Change color on hover for better visibility */
+}
+
+.custom-link {
+    color: #28a745; /* Culoare verde */
+    text-decoration: none; /* Elimină sublinierea */
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Subliniere la hover */
+}
+
+.custom-meniu
+{
+    color: #28a745 !important; 
+}
+
+.contact-box {
+    background-color: rgba(192, 227, 207, 0.7); /* Verde deschis cu transparență */
+    padding: 10px; /* Spațiu interior redus */
+    border-radius: 5px; /* Colțuri rotunjite */
+    text-align: center; /* Centrarea textului */
+    margin-bottom: 20px; /* Spațiu între boxuri */
+    height: 100%; /* Asigură că boxurile au aceeași înălțime */
+}
+
+.contact-box h5 {
+    margin-bottom: 5px; /* Spațiu mai mic între titlu și paragraf */
+}
+
+.contact-box p {
+    margin: 0; /* Elimină marginea implicită a paragrafului */
+}
+
+
