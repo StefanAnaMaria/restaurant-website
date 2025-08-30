@@ -5,6 +5,7 @@ It includes features like a dynamic menu, user authentication, and a contact for
 
 ## 🌍 Live Demo  
 🔗 [View the live website here](http://italianorestaurant.kesug.com/pages/home.php)
+🔗 [View the live website here](https://italianorestaurant.infinityfree.me/pages/home.php)
 
 ## 🚀 Features  
 - **User Authentication:** Login and registration system  
